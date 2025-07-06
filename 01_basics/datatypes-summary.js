@@ -40,3 +40,27 @@ const myFunc = function(){                     //function
 // let bigNum = 12312342343343234322134894567890
 console.log(typeof bigNum)                        // if BigNum is not defined then show undefined 
 console.log(typeof outsidetemp)                // it givesus datatype object but the value of outsidetemp = null 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// Stack (Primitive - pass by value) and Heap ( Non-Primitive - pass by reference)
+
+let utubechannelName = "DataScience with Ash"                   
+let another_utubeName = utubechannelName                   // go to stack as a copy
+another_utubeName = "Software developemt with Ash"
+console.log(utubechannelName)
+console.log(another_utubeName)                  // pass by value 
+
+let userOne ={
+    mailId : "ash@google.com",              // go to heap 
+    upiId : " ash@ybl"
+}
+
+let userTwo = userOne                   // pass by reference
+console.log(userTwo.mailId)
+console.log(userOne.mailId)
+
+
+
+
